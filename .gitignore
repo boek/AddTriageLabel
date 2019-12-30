@@ -21,6 +21,7 @@ Debug
 *.user
 obj
 bin
+out
 /build/
 *.exe
 !.paket/paket.bootstrapper.exe

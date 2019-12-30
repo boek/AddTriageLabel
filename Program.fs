@@ -6,9 +6,9 @@
     [<Literal>]
     let private EVENT_PATH_KEY = "GITHUB_EVENT_PATH"
     [<Literal>]
-    let private AUTH_TOKEN_KEY = "REPO_TOKEN"
+    let private AUTH_TOKEN_KEY = "INPUT_REPOTOKEN"
     [<Literal>]
-    let private LABEL_TO_ADD_KEY = "LABEL_TO_ADD"
+    let private LABEL_TO_ADD_KEY = "INPUT_LABELTOADD"
 
     let Get key =
         let result = match key with

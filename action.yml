@@ -1,0 +1,12 @@
+name: 'Add Label to Issue'
+description: 'Adds a label to an issue'
+inputs:
+  repoToken:
+    description: 'Token to access repo'
+    required: true
+  labelToAdd:
+    description: 'Label to add to the issue'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
