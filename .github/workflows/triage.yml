@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add Triage Label
-        uses: boek/AddTriageLabel@v1.1
+        uses: boek/AddTriageLabel@v1.2
         env:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           labelToAdd: "needs:triage"
