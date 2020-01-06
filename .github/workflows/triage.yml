@@ -1,4 +1,4 @@
-name: CI
+name: AssignTriageLabel
 
 on:
   issues: [create]
