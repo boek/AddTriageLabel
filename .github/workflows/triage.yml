@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Add Triage Label
         uses: boek/AddTriageLabel@v1.2
-        env:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          labelToAdd: "needs:triage"
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          label-to-add: "needs:triage"
