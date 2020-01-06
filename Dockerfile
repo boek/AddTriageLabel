@@ -7,4 +7,4 @@ RUN dotnet restore
 COPY . ./
 RUN dotnet publish -c Release -o out
 
-ENTRYPOINT ["dotnet", "out/AddTriageLabel.dll"]
+ENTRYPOINT ["dotnet", "/app/out/AddTriageLabel.dll"]
