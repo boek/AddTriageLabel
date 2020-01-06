@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  issues: [create]
+
+jobs:
+  assign:
+    name: Triage Issues
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add Triage Label
+        uses: boek/AddTriageLabel@v1
+        env:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          labelToAdd: "needs:triage"
