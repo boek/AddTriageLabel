@@ -1,7 +1,8 @@
 name: AssignTriageLabel
 
 on:
-  issues: [opened]
+  issues:
+    types: [opened]
 
 jobs:
   assign:
